@@ -24,7 +24,7 @@ export default {
   methods: {
     async transcribe() {
       try {
-        const res = await axios.get("http://too-long-didnt-watch.com/transcribe", {
+        const res = await axios.get("https://too-long-didnt-watch-a1cf77aca2f4.herokuapp.com/transcribe", {
           params: { youtube_url: this.url }
         });
         this.text = res.data.text;
